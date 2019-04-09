@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewBag.Title = "Venues";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="title">
+    <div class="grid-head listing-head">
+        <h1 class="page-title">Venues</h1>
+    </div>
+</section>
+<br>
+<section class="grid-list">
+    <div class="container">
+        <div class='row'>
+            <div class="col-md-3">
+                <div class="grid-left">
+                    <button class="btn btn-primary visible-xs wd100" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> <i class="fa fa-filter" aria-hidden="true"></i> Filters </button>
+                    <div class="collapse dont-collapse-sm" id="collapseExample">
+                        <h5>
+                            <article class="pull-left">Filters</article>
+                            <a class="pull-right reset_all" style="font-weight: lighter; cursor:pointer;"> <u>Reset All</u></a>
+                        </h5>
+                        <div class="clearfix"></div>
+                        <div class="left-side-bar p0">
+                            <div class="pr0">
+                                <div class="panel panel-default sidebar-menu wow fadeInRight animated">
+                                    <div class="panel-body search-widget">
+                                        <form method="POST" action="https://www.wingding.pk/services/search" accept-charset="UTF-8">
+                                            <input name="_token" type="hidden" value="JCRDJgZXhgjwgEJSwDORI11TkOzaApRIQcHRFoh3">
+
+
+
+                                            <!--  <form class="form-inline" method="POST"  action="search" accept-charset="UTF-8" > -->
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <h5>Select Neighbourhood</h5>
+                                                        <select class="fields selectpicker" data-live-search="true" data-live-search-style="begins" title="- Select Area -" name="area"><option value="Azizabad">Azizabad</option><option value="Bahadurabad">Bahadurabad</option><option value="Baloch Colony">Baloch Colony</option><option value="Banaras">Banaras</option><option value="Bath Island">Bath Island</option><option value="Buffer Zone">Buffer Zone</option><option value="Burns Road">Burns Road</option><option value="City Railway Station">City Railway Station</option><option value="Clifton">Clifton</option><option value="DHA">DHA</option><option value="Dhoraji">Dhoraji</option><option value="Eissa Nagar">Eissa Nagar</option><option value="F.B. Area">F.B. Area</option><option value="Garden East">Garden East</option><option value="Garden West">Garden West</option><option value="Gizri">Gizri</option><option value="Gulistan-e-Jauhar">Gulistan-e-Jauhar</option><option value="Gulshan-e-Hadeed">Gulshan-e-Hadeed</option><option value="Gulshan-e-Iqbal">Gulshan-e-Iqbal</option><option value="Gulshan-e-Maymar">Gulshan-e-Maymar</option><option value="Jamshed Quarter">Jamshed Quarter</option><option value="Karimabad">Karimabad</option><option value="Kimari">Kimari</option><option value="Korangi">Korangi</option><option value="Landhi">Landhi</option><option value="Liaqtabad">Liaqtabad</option><option value="Malir">Malir</option><option value="Malir Cant">Malir Cant</option><option value="Model Colony">Model Colony</option><option value="Nazimabad">Nazimabad</option><option value="North karachi">North karachi</option><option value="North Nazimabad">North Nazimabad</option><option value="Old Area">Old Area</option><option value="Orangi Town">Orangi Town</option><option value="Pakistan Chowk">Pakistan Chowk</option><option value="Pakistan Quarter">Pakistan Quarter</option><option value="PECHS">PECHS</option><option value="Saddar">Saddar</option><option value="Sakhi Hasan">Sakhi Hasan</option><option value="Shaheed-e-Millat Road">Shaheed-e-Millat Road</option><option value="Shahrah-e-Faisal">Shahrah-e-Faisal</option><option value="Tariq Road">Tariq Road</option></select>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="padding-5">
+                                                <div class="row price-range-section">
+                                                    <div class="col-xs-12">
+                                                        <h5>Your Price Range</h5>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <input class="col-md-6 pull-left price_range_min fields" placeholder="Min" name="price_min" type="number" value="">                          <input class="col-md-6 pull-left price_range_max fields" placeholder="Max" name="price_max" type="number" value="">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <fieldset class="padding-5">
+                                                <div class="row price-range-section">
+                                                    <div class="col-xs-12">
+                                                        <h5>Guest Capacity</h5>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <input class="col-md-12 pull-left guest_capacity fields" placeholder="Capacity" name="guest_capacity" type="number" value="">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="padding-5">
+                                                <div class="row price-range-section">
+                                                    <div class="col-xs-12">
+                                                        <h5>Select Date</h5>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="input-group date" data-provide="datepicker" style="width: 100%;">
+                                                            <input class="form-control fields" name="date" type="text" value="">                            <div class="input-group-addon"> <i class="glyphicon glyphicon-calendar"></i> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <h5>Rating</h5>
+                                                        <div class="star-rating">
+                                                            <span class="fa fa-star-o" data-rating="1"></span> <span class="fa fa-star-o" data-rating="2"></span> <span class="fa fa-star-o" data-rating="3"></span> <span class="fa fa-star-o" data-rating="4"></span> <span class="fa fa-star-o" data-rating="5"></span>
+                                                            <input type="hidden" name="rating" class="rating-value">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset style="border-bottom: 0;">
+                                                <div class="row">
+                                                    <input type="text" name="type_hidden" id="type_hidden">
+                                                    <div class="col-xs-12">
+                                                        <h5>Tags</h5>
+
+                                                        <div class="ch1">
+                                                            <label>
+                                                                <input type="checkbox" value="Marriage hall" name="tags[]">
+                                                                <span>Marriage hall</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="ch1">
+                                                            <label>
+                                                                <input type="checkbox" value="Lawn" name="tags[]">
+                                                                <span>Lawn</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="ch1">
+                                                            <label>
+                                                                <input type="checkbox" value="Banquet" name="tags[]">
+                                                                <span>Banquet</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="ch1">
+                                                            <label>
+                                                                <input type="checkbox" value="Marque" name="tags[]">
+                                                                <span>Marque</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="ch1">
+                                                            <label>
+                                                                <input type="checkbox" value="Hotel" name="tags[]">
+                                                                <span>Hotel</span>
+                                                            </label>
+                                                        </div>
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12">
+                                                    <input class="button btn largesearch-btn" value="Apply Filter" type="submit">
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                        <!-- </form> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-9 grid-right">
+                <div class="clear grid-right-top">
+                    <div class="col-xs-10 page-subheader sorting pl0">
+                        <span class="pull-left" style="margin:10px 5px 0 10px;text-transform: capitalize;">
+                            <a href=@Url.Action("Index","Home")>Home</a> > <a href=@Url.Action("Services","Service")>Services</a> > venues
+                        </span>
+                        <ul class="sort-by-list pull-left"></ul>
+                        <!--/ .sort-by-list-->
+                    </div>
+                    <div class="col-xs-2 layout-switcher"> <a class="layout-list" href="javascript:void(0);"> <i class="fa fa-th-list"></i> </a> <a class="layout-grid active" href="javascript:void(0);"> <i class="fa fa-th"></i> </a> </div>
+                    <!--/ .layout-switcher-->
+                </div>
+                <div class="clear grid-items">
+                    <div id="list-type" class="proerty-th">
+
+
+
+                        <div class="col-sm-6 col-md-4 p0">
+                            <div class="box-two proerty-item">
+                                <div class="item-thumb">
+                                    <a href=@Url.Action("DummyBanquet2","Service")>  <img src=@Url.Content("/Content/uploads/services/image_1.jpg")>  </a>
+                                </div>
+                                <div class="item-entry overflow">
+                                    <h5><a href=@Url.Action("DummyBanquet2","Service")> DUMMY BANQUET </a></h5>
+                                    <p>Located at main road of South Nazimabad block A. 900 guest capacity. Adecuate car parking which can occommodate 300 cars easily. Choice of colour themes and stage options.</p>
+                                    <div class="property-icon">
+                                        <input type="hidden" name="id" value="201">
+                                        <a class="btn booknow-list button" href=@Url.Action("DummyBanquet2","Service") type="submit">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="clear">
+                    <div class="pull-right">  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+
+    .event a {
+        background-color: #42B373 !important;
+        background-image: none !important;
+        color: #ffffff !important;
+    }
+</style>
+

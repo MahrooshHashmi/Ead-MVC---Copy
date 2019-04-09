@@ -1,0 +1,603 @@
+﻿
+@{
+    ViewBag.Title = "DummyBanquet2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="title">
+    <div class="shadeblack">
+        <div class="profile-head" style="background:url(/Content/uploads/services/cover_image_1.jpg) no-repeat scroll center top / cover;"> </div>
+        <div class="container">
+            <div class="row">
+                <div class="profile-head-content">
+                    <div class="headervendor">
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="vendorlogo" style="background:url(/Content/uploads/services/image_1.jpg) no-repeat #FFF center center / cover; width:150px; height:150px;"> </div>
+                        </div>
+
+                        <div class="col-md-10 col-sm-9 col-xs-6">
+                            <h1>DUMMY BANQUET</h1>
+                            <h2><i class="pe-7s-map-marker strong"> </i>Azizabad, Karachi</h2>
+                            <h2>
+                                <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked "></span>
+
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tab-body">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+
+                <div class="col-md-9">
+                    <div style="margin-top: 10%;">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a style="color:#777;font-weight:300;" href=@Url.Action("Index","Home")>Home</a></li>
+                                <li class="breadcrumb-item"><a style="color:#777;font-weight:300;" href=@Url.Action("Services","Service")>Services</a></li>
+                                <li class="breadcrumb-item "><a style="color:#777;font-weight:300;" @Url.Action("Venues","Service")>venues</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">DUMMY BANQUET</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <ul class="nav nav-tabs">
+
+                        <li class="active"><a style="    color: #7d3d97; font-weight: bold;" data-toggle="tab" href="#offering">Offerings</a></li>
+                        <li><a style="color: #7d3d97; font-weight: bold;" data-toggle="tab" href="#photo">Galleries</a></li>
+                        <li><a style="color: #7d3d97; font-weight: bold;" data-toggle="tab" href="#address">Contact</a></li>
+                        <li><a style="color: #7d3d97; font-weight: bold;" data-toggle="tab" href="#vanue">About</a></li>
+                        <li><a style="color: #7d3d97; font-weight: bold;" data-toggle="tab" href="#reviews">Reviews</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="vanue" class="tab-pane fade in">
+                            <div class="row">
+                                <div class="col-md-12 vender-venus">
+                                    <h3>About DUMMY BANQUET </h3>
+                                    <div>   </div>
+                                </div>
+                                <div class="col-md-12 vender-venus">
+                                    <h3>Features</h3>
+                                    <div>
+                                        <ul>
+                                            <li>Easy to access from all parts of karachi</li>
+                                            <li>300 car parking space</li>
+                                            <li>valet service</li>
+                                            <li>900 guest capacity</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 vender-venus">
+                                    <h3>Terms & Conditions</h3>
+                                    <div>
+                                        <ul>
+                                            <li>No fireworks allowed inside the premises of banquet</li>
+                                            <li>Party time will be 8pm to 12 am</li>
+                                            <li>Lights will be turn off after 12 am</li>
+                                            <li>Cold drinks will be served in house</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="offering" class="tab-pane fade in active">
+                            <div id="list-type" class="proerty-th">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="box-two proerty-item2">
+                                        <div class="item-thumb">
+                                            <a data-toggle="modal" style=" background:url(/Content/uploads/packages/image_1.jpg) no-repeat center center / cover; cursor:pointer; width:100%; height:150px; overflow:hidden; display:block; border:1px solid #CCC;" data-target="#OfferModal_1 " value="1"></a>
+                                            <h4 class="proerty-price">
+                                                Rs.250000
+                                                <span><a data-toggle="modal" style="cursor:pointer;font-size:15px;" data-target="#OfferModal_1 " value="1">  600 guest  </a></span>
+                                            </h4>
+                                        </div>
+                                        <div class="item-entry overflow">
+                                            <h5><a data-toggle="modal" style="cursor:pointer;" data-target="#OfferModal_1 " value="1"> Evening Parties </a></h5>
+                                            <div class="property-icon">
+                                                <input type="hidden" class="offerId" value="1">
+                                                <a class="btn-primary" style="cursor:pointer;color:white;margin-top: 0px;" data-toggle="modal" data-target="#OfferModal_1 " value="1" data-wow-delay="0.5s"
+                                                   style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">Book Now</a> <br>
+                                                <div class="modal fade" id="OfferModal_1" tabindex="-1" role="dialog" aria-labelledby="OfferModal"
+                                                     aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                                                <h5 class="modal-title" id="exampleModalLabel" style="color:#fff;">Offering Details</h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form class="form-horizontal bookingForm" method="POST" action="https://www.wingding.pk/booknow">
+                                                                    <input type="hidden" name="_token" value="JCRDJgZXhgjwgEJSwDORI11TkOzaApRIQcHRFoh3">
+                                                                    <div class="col-md-12">
+                                                                        <label>
+                                                                            * Please select desired date of booking from the calender.
+                                                                        </label>
+                                                                        <label>* Dates marks in red are not available. </label>
+                                                                    </div>
+                                                                    <div class="calender my-calender">
+                                                                        <fieldset class="padding-5">
+                                                                            <div class="row price-range-section">
+                                                                                <div class="col-xs-12">
+                                                                                    <div required id="frontCalendar_1"
+                                                                                         data-bookings="[{&quot;id&quot;:90,&quot;created_at&quot;:&quot;2018-07-04 15:42:26&quot;,&quot;updated_at&quot;:&quot;2018-07-04 16:10:09&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 16:10:09&quot;,&quot;amount&quot;:&quot;250000.00&quot;,&quot;discount&quot;:&quot;25000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;150000.00&quot;,&quot;package_id&quot;:&quot;1&quot;,&quot;cf1&quot;:&quot;valima reception, 600 guests&quot;,&quot;cf2&quot;:&quot;4 main course, 2 starter, drinks, tea, coffee&quot;,&quot;cf3&quot;:&quot;red , golden setting&quot;,&quot;cf4&quot;:&quot;stage option number 4&quot;,&quot;is_active&quot;:null},{&quot;id&quot;:102,&quot;created_at&quot;:&quot;2018-07-28 14:25:02&quot;,&quot;updated_at&quot;:&quot;2018-07-28 14:25:02&quot;,&quot;user_id&quot;:&quot;355&quot;,&quot;booking_date&quot;:&quot;2018-07-18 00:00:00&quot;,&quot;amount&quot;:&quot;77000.00&quot;,&quot;discount&quot;:&quot;3000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;5000.00&quot;,&quot;package_id&quot;:&quot;1&quot;,&quot;cf1&quot;:&quot;Testing booking through ipad&quot;,&quot;cf2&quot;:&quot;Same is happening here&quot;,&quot;cf3&quot;:&quot;Third line of description&quot;,&quot;cf4&quot;:&quot;Fourth line of description&quot;,&quot;is_active&quot;:null}]"
+                                                                                         class="input-group date" data-provide="datepicker" style="width: 100%;">
+                                                                                        <input required name="booking_date" id="booking_date" type="hidden" class="form-control"
+                                                                                               style="border-bottom-right-radius: 0 !important; border-top-right-radius: 0 !important;">
+                                                                                    </div>
+                                                                                    <input type="hidden" name="package_id" value="1" id="package_id" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </fieldset>
+                                                                    </div>
+                                                                    <a class="btn-primary" style="margin-left: 40%;color:white;" href=@Url.Action("Login","Home") data-wow-delay="0.5s"
+                                                                       style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">Book Now</a>
+                                                                </form>
+                                                                <div class="box-two proerty-item" style="max-height:50px;overflow-y:auto;">
+                                                                    <h5 style="color:#ec018c;font-size:20px">Offer Name : Evening Parties</h5>
+                                                                    <hr>
+                                                                    <h5 style="color:#ec018c;font-size:20px">Description</h5>
+                                                                    <div><p>Celebrate your event in cool environment. We offer best in twon decor, stage and crockery.</p></div>
+                                                                    <br>
+                                                                    <h5 style="color:#ec018c;font-size:20px">Specifications</h5>
+                                                                    <div>
+                                                                        <ul>
+                                                                            <li>Guest capacity for upto 900 persons.</li>
+                                                                            <li>Various colour theme options available to chose from.</li>
+                                                                            <li>Chilled AC environment.</li>
+                                                                            <li>In house cold drinks.</li>
+                                                                            <li>Best price.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <br>
+                                                                    <h5 style="color:#ec018c;font-size:20px"> Features</h5>
+                                                                    <div>
+                                                                        <ul>
+                                                                            <li>Free valet parking.</li>
+                                                                            <li>Timeings: 8pm to 12 am.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <br>
+                                                                    <h5 style="color:#ec018c;font-size:20px">Terms & Condition</h5>
+                                                                    <div>
+                                                                        <ul>
+                                                                            <li>Price quoted for 600 guest</li>
+                                                                            <li>Event timing: 8 pm to 12 am</li>
+                                                                            <li>25% of booking amount to be paid up front</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="mybtn btn-Request-Quote" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="box-two proerty-item2">
+                                        <div class="item-thumb">
+                                            <a data-toggle="modal" style=" background:url(/Content/uploads/services/image_1.jpg) no-repeat center center / cover; cursor:pointer; width:100%; height:150px; overflow:hidden; display:block; border:1px solid #CCC;" data-target="#OfferModal_2 " value="2"></a>
+                                            <h4 class="proerty-price">
+                                                Rs.125000
+                                                <span><a data-toggle="modal" style="cursor:pointer;font-size:15px;" data-target="#OfferModal_2 " value="2">  600 guest  </a></span>
+                                            </h4>
+                                        </div>
+                                        <div class="item-entry overflow">
+                                            <h5><a data-toggle="modal" style="cursor:pointer;" data-target="#OfferModal_2 " value="2"> Day Parties </a></h5>
+                                            <div class="property-icon">
+                                                <input type="hidden" class="offerId" value="2">
+                                                <a class="btn-primary" style="cursor:pointer;color:white;margin-top: 0px;" data-toggle="modal" data-target="#OfferModal_2 " value="2" data-wow-delay="0.5s"
+                                                   style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">Book Now</a> <br>
+                                                <div class="modal fade" id="OfferModal_2" tabindex="-1" role="dialog" aria-labelledby="OfferModal"
+                                                     aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                                                <h5 class="modal-title" id="exampleModalLabel" style="color:#fff;">Offering Details</h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form class="form-horizontal bookingForm" method="POST" action="https://www.wingding.pk/booknow">
+                                                                    <input type="hidden" name="_token" value="JCRDJgZXhgjwgEJSwDORI11TkOzaApRIQcHRFoh3">
+                                                                    <div class="col-md-12">
+                                                                        <label>
+                                                                            * Please select desired date of booking from the calender.
+                                                                        </label>
+                                                                        <label>* Dates marks in red are not available. </label>
+                                                                    </div>
+                                                                    <div class="calender my-calender">
+                                                                        <fieldset class="padding-5">
+                                                                            <div class="row price-range-section">
+                                                                                <div class="col-xs-12">
+                                                                                    <div required id="frontCalendar_2"
+                                                                                         data-bookings="[{&quot;id&quot;:62,&quot;created_at&quot;:&quot;2018-05-08 16:54:13&quot;,&quot;updated_at&quot;:&quot;2018-05-11 19:00:20&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-05-24 19:00:20&quot;,&quot;amount&quot;:&quot;50000.00&quot;,&quot;discount&quot;:&quot;5000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;25000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:&quot;Description 1&quot;,&quot;cf2&quot;:&quot;Description 2&quot;,&quot;cf3&quot;:&quot;Description 3&quot;,&quot;cf4&quot;:&quot;Description 4&quot;,&quot;is_active&quot;:null},{&quot;id&quot;:77,&quot;created_at&quot;:&quot;2018-07-02 18:16:39&quot;,&quot;updated_at&quot;:&quot;2018-07-07 12:15:56&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 12:15:56&quot;,&quot;amount&quot;:&quot;100000.00&quot;,&quot;discount&quot;:&quot;10000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;50000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:null,&quot;cf2&quot;:null,&quot;cf3&quot;:null,&quot;cf4&quot;:null,&quot;is_active&quot;:null},{&quot;id&quot;:97,&quot;created_at&quot;:&quot;2018-07-07 12:22:21&quot;,&quot;updated_at&quot;:&quot;2018-07-07 12:24:12&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 12:24:12&quot;,&quot;amount&quot;:&quot;125000.00&quot;,&quot;discount&quot;:&quot;0.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;100000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:null,&quot;cf2&quot;:null,&quot;cf3&quot;:null,&quot;cf4&quot;:null,&quot;is_active&quot;:null},{&quot;id&quot;:98,&quot;created_at&quot;:&quot;2018-07-07 12:27:40&quot;,&quot;updated_at&quot;:&quot;2018-07-07 12:30:30&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 12:30:30&quot;,&quot;amount&quot;:&quot;125000.00&quot;,&quot;discount&quot;:&quot;5000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;75000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:&quot;this is a new booking&quot;,&quot;cf2&quot;:&quot;testing this booking against&quot;,&quot;cf3&quot;:&quot;3rd booking&quot;,&quot;cf4&quot;:&quot;hope it turns red in front end&quot;,&quot;is_active&quot;:null}]"
+                                                                                         class="input-group date" data-provide="datepicker" style="width: 100%;">
+                                                                                        <input required name="booking_date" id="booking_date" type="hidden" class="form-control"
+                                                                                               style="border-bottom-right-radius: 0 !important; border-top-right-radius: 0 !important;">
+                                                                                    </div>
+                                                                                    <input type="hidden" name="package_id" value="2" id="package_id" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </fieldset>
+                                                                    </div>
+                                                                    <a class="btn-primary" style="margin-left: 40%;color:white;" href=@Url.Action("Login","Home") data-wow-delay="0.5s"
+                                                                       style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">Book Now</a>
+                                                                </form>
+                                                                <div class="box-two proerty-item" style="max-height:50px;overflow-y:auto;">
+                                                                    <h5 style="color:#ec018c;font-size:20px">Offer Name : Day Parties</h5>
+                                                                    <hr>
+                                                                    <h5 style="color:#ec018c;font-size:20px">Description</h5>
+                                                                    <div></div>
+                                                                    <br>
+                                                                    <h5 style="color:#ec018c;font-size:20px">Specifications</h5>
+                                                                    <div></div>
+                                                                    <br>
+                                                                    <h5 style="color:#ec018c;font-size:20px"> Features</h5>
+                                                                    <div></div>
+                                                                    <br>
+                                                                    <h5 style="color:#ec018c;font-size:20px">Terms & Condition</h5>
+                                                                    <div>
+                                                                        <ul>
+                                                                            <li>Price quoted for 600 guest</li>
+                                                                            <li>Party timing: 1 pm to 5 pm</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="mybtn btn-Request-Quote" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="photo" class="tab-pane fade in">
+                            <div class="row">
+                                <div class='list-group gallery'>
+                                    <div class='col-sm-4 col-xs-12 col-md-3 col-lg-3'>
+                                        <div class="galbox">
+                                            <div class="imgboxgal" style="background:url(/Content/uploads/services/gallery_5.jpg) no-repeat center center / cover; width:100%; height:150px; display:block"></div>
+                                            <a data-toggle="lightbox"
+                                               data-gallery="example-gallery-0" href=@Url.Content("/Content/uploads/services/gallery_5.jpg") class="btnhovergal fancybox">View Gallery</a>
+                                            <div class='text-left'>
+                                                <h3>Stage Options</h3>
+                                            </div>
+                                        </div>
+                                        <!-- text-right / end -->
+                                    </div>
+                                    <div style="display:none;" class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                        <a class="fancybox" data-toggle="lightbox"
+                                           data-gallery="example-gallery-0" href=@Url.Content("/Content/uploads/services/gallery_5_0wedding-stages-02.jpg.jpg")>
+                                            <img class="img-responsive" alt="" style="min-width: 150px;width: auto;height: 150px;"
+                                                 src=@Url.Content("/Content/uploads/services/gallery_5_0wedding-stages-02.jpg.jpg") />
+                                        </a>
+                                    </div>
+                                    <div style="display:none;" class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                        <a class="fancybox" data-toggle="lightbox"
+                                           data-gallery="example-gallery-0" href=@Url.Content("/Content/uploads/services/gallery_5_2wedding-stages-04.png.png")>
+                                            <img class="img-responsive" alt="" style="min-width: 150px;width: auto;height: 150px;"
+                                                 src=@Url.Content("/Content/uploads/services/gallery_5_2wedding-stages-04.png.png") />
+                                        </a>
+                                    </div>
+                                    <div style="display:none;" class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                        <a class="fancybox" data-toggle="lightbox"
+                                           data-gallery="example-gallery-0" href=@Url.Content("/Content/uploads/services/gallery_5_3wedding-stages-05.jpg.jpg")>
+                                            <img class="img-responsive" alt="" style="min-width: 150px;width: auto;height: 150px;"
+                                                 src=@Url.Content("/Content/uploads/services/gallery_5_3wedding-stages-05.jpg.jpg") />
+                                        </a>
+                                    </div>
+                                    <div class='col-sm-4 col-xs-12 col-md-3 col-lg-3'>
+                                        <div class="galbox">
+                                            <div class="imgboxgal" style="background:url(/Content/uploads/services/gallery_15.jpg) no-repeat center center / cover; width:100%; height:150px; display:block"></div>
+                                            <a data-toggle="lightbox"
+                                               data-gallery="example-gallery-1" href=@Url.Content("/Content/uploads/services/gallery_15.jpg") class="btnhovergal fancybox">View Gallery</a>
+                                            <div class='text-left'>
+                                                <h3>New Options</h3>
+                                            </div>
+                                        </div>
+                                        <!-- text-right / end -->
+                                    </div>
+                                    <div style="display:none;" class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                        <a class="fancybox" data-toggle="lightbox"
+                                           data-gallery="example-gallery-1" href=@Url.Content("/Content/uploads/services/gallery_15_0F4D227B0-E25C-4163-9C46-1D02534A5956.jpeg.jpg")>
+                                            <img class="img-responsive" alt="" style="min-width: 150px;width: auto;height: 150px;"
+                                                 src=@Url.Content("/Content/uploads/services/gallery_15_0F4D227B0-E25C-4163-9C46-1D02534A5956.jpeg.jpg") />
+                                        </a>
+                                    </div>
+                                    <div style="display:none;" class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                        <a class="fancybox" data-toggle="lightbox"
+                                           data-gallery="example-gallery-1" href=@Url.Content("/Content/uploads/services/gallery_15_1071E6BFE-7AAB-4949-A9F7-FE5A63D69127.jpeg.jpg")>
+                                            <img class="img-responsive" alt="" style="min-width: 150px;width: auto;height: 150px;"
+                                                 src=@Url.Content("/Content/uploads/services/gallery_15_1071E6BFE-7AAB-4949-A9F7-FE5A63D69127.jpeg.jpg") />
+                                        </a>
+                                    </div>
+                                    <div style="display:none;" class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                        <a class="fancybox" data-toggle="lightbox"
+                                           data-gallery="example-gallery-1" href=@Url.Content("/Content/uploads/services/gallery_15_224A0E856-E064-4170-BBF7-06C5A1F24BEE.jpeg.jpg")>
+                                            <img class="img-responsive" alt="" style="min-width: 150px;width: auto;height: 150px;"
+                                                 src=@Url.Content("/Content/uploads/services/gallery_15_224A0E856-E064-4170-BBF7-06C5A1F24BEE.jpeg.jpg") />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="address" class="tab-pane fade in">
+                            <div class="row vender-contact-info">
+                                <div class="col-md-4" style="border-right: 1px solid #dcd5cd;">
+                                    <div class="col-md-4"> <img alt="" src=@Url.Content("/Content/frontend/assets/img/address-icon.png")> </div>
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <!-- <li>Hotel Metropole to</li> will discuss about this...  -->
+                                            <li> Azizabad, Karachi</li>
+                                            <li>C-55, Block A, North Nazimabad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="border-right: 1px solid #dcd5cd;">
+                                    <div class="col-md-4"> <img alt="" src=@Url.Content("/Contentfrontend/assets/img/phone-icon.png")></div>
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <li>Ph : 02136620002</li>
+                                            <li>Tel : 03094643464</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="col-md-4"> <img alt="" src=@Url.Content("/Contentfrontend/assets/img/email-icon.png")></div>
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <li>info@wingding.pk</li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="vendor_map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d904.982640993631!2d67.07200848808797!3d24.8662209989983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea2e62c35cb%3A0x8b6f14b443648b66!2sWingDing!5e0!3m2!1sen!2s!4v1523962586650" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div id="reviews" class="tab-pane fade in">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="panel panel-white post panel-shadow" style="margin-top: 30px;">
+                                        <div class="post-heading">
+                                            <div class="pull-left image">
+                                                <img src=@Url.Content("/Content/uploads/profile/dummy-avatar.png")
+                                                     class="img-circle avatar" alt="user profile image">
+                                            </div>
+                                            <div class="pull-left meta">
+                                                <div class="title h5"> <b>Shahriyar WingDing</b> </div>
+                                                <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked "></span>
+                                                (Evening Parties)
+                                            </div>
+                                        </div>
+                                        <div class="post-description">
+                                            simply awesome. Highly recommended.
+                                            <h3>13 Apr, 2018</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="social2">
+                        <ul>
+                            <li><a class="wow fadeInUp animated animated" target="_blank" href="https://www.facebook.com//wingding.pk" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="wow fadeInUp animated animated" target="_blank" href="https://instagram.com//wingding" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <button class="navbar-btn nav-button-vender wow fadeInRight animated hidden-sm"
+                                href="#offering" data-toggle="tab" id="bookNow" data-wow-delay="0.5s"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+                            Book
+                            Now
+                        </button>
+                        <button class="navbar-btn nav-button-vender-book wow fadeInRight animated"
+                                data-wow-delay="0.5s"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;"
+                                data-toggle="modal" id="chatVendor" data-target="#chatModal">
+                            Chat With <br>
+                            DUMMY BANQUET
+                        </button>
+
+                        <!-- Modal -->
+                        <div id="chatModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Contact DUMMY BANQUET</h4>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- /.row -->
+                                        <form method="POST" action="https://www.wingding.pk/message" accept-charset="UTF-8" id="msgBox" style="margin: 32px;">
+                                            <input name="_token" type="hidden" value="JCRDJgZXhgjwgEJSwDORI11TkOzaApRIQcHRFoh3">
+
+                                            <input name="receiver_id" type="hidden" value="201">
+                                            <div class="hideTitle">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="subject"><label for="title">Title:</label></label>
+                                                            <input class="title_input  form-control" name="title" type="text" id="title">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="message"><label for="message">Message:</label></label>
+                                                        <textarea class="form-control" name="message" cols="50" rows="10" id="message"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 text-center">
+                                                    <button id="send_message" type="button" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send message</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="alert alert-success alert-dismissable hidden message_result">
+                                                    <div id="message_result"> </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="disclamier">
+                        <h1>Disclamier</h1>
+                        <p>Vendors are responsible and manage their profile pages</p>
+                        <P>
+                            content, pictures, etc. WingDing doesn’t bear
+                            responsibility for falsified information and or copyright material if posted on our website by vendors
+                            It’s
+                            vendor’s responsibility to not to publish someone else’s photos, videos, content, etc.
+                        </P>
+                        <P>
+                            WingDing doesn’t facilitate
+                            payments by any means nor we ask or promote to pay vendors without visiting them
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="OfferModal" tabindex="-1" role="dialog" aria-labelledby="OfferModal"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Select date of booking from calendar <br>
+                        Dates marked with RED are not available.
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" class="form-control quote-form-fields offerId" id="offerId" />
+                    <div class="col-sm-6 col-md-4 p0">
+                        <div class="box-two proerty-item2">
+                            <div class="item-thumb">
+                                <a href=@Url.Action("Login","Home")><img src=@Url.Content("/Content/uploads/packages/image_1.jpg")></a>
+                                <h4 class="proerty-price">
+                                    250000 <br>
+                                    <span>per </span>
+                                </h4>
+                            </div>
+                            <div class="item-entry overflow">
+                                <h5><a href=@Url.Action("Login","Home")> Evening Parties </a></h5>
+                                <p><p>Celebrate your event in cool environment. We offer best in twon decor, stage and crockery.</p></p>
+                                <div class="calender">
+                                    <fieldset class="padding-5" style="border: 2px solid #f3f3f5;">
+                                        <div class="row price-range-section">
+                                            <div class="col-xs-12">
+                                                <div id="frontCalendar_1"
+                                                     data-bookings="[{&quot;id&quot;:90,&quot;created_at&quot;:&quot;2018-07-04 15:42:26&quot;,&quot;updated_at&quot;:&quot;2018-07-04 16:10:09&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 16:10:09&quot;,&quot;amount&quot;:&quot;250000.00&quot;,&quot;discount&quot;:&quot;25000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;150000.00&quot;,&quot;package_id&quot;:&quot;1&quot;,&quot;cf1&quot;:&quot;valima reception, 600 guests&quot;,&quot;cf2&quot;:&quot;4 main course, 2 starter, drinks, tea, coffee&quot;,&quot;cf3&quot;:&quot;red , golden setting&quot;,&quot;cf4&quot;:&quot;stage option number 4&quot;,&quot;is_active&quot;:null},{&quot;id&quot;:102,&quot;created_at&quot;:&quot;2018-07-28 14:25:02&quot;,&quot;updated_at&quot;:&quot;2018-07-28 14:25:02&quot;,&quot;user_id&quot;:&quot;355&quot;,&quot;booking_date&quot;:&quot;2018-07-18 00:00:00&quot;,&quot;amount&quot;:&quot;77000.00&quot;,&quot;discount&quot;:&quot;3000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;5000.00&quot;,&quot;package_id&quot;:&quot;1&quot;,&quot;cf1&quot;:&quot;Testing booking through ipad&quot;,&quot;cf2&quot;:&quot;Same is happening here&quot;,&quot;cf3&quot;:&quot;Third line of description&quot;,&quot;cf4&quot;:&quot;Fourth line of description&quot;,&quot;is_active&quot;:null}]"
+                                                     class="input-group date" data-provide="datepicker" style="width: 100%;">
+                                                    <input type="hidden" class="form-control"
+                                                           style="border-bottom-right-radius: 0 !important; border-top-right-radius: 0 !important;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 p0">
+                        <div class="box-two proerty-item2">
+                            <div class="item-thumb">
+                                <a href=@Url.Action("Login","Home")><img src=@Url.Content("/Content/uploads/services/image_1.jpg")></a>
+                                <h4 class="proerty-price">
+                                    125000 <br>
+                                    <span>per </span>
+                                </h4>
+                            </div>
+                            <div class="item-entry overflow">
+                                <h5><a href=@Url.Action("Login","Home")> Day Parties </a></h5>
+                                <p></p>
+                                <div class="calender">
+                                    <fieldset class="padding-5" style="border: 2px solid #f3f3f5;">
+                                        <div class="row price-range-section">
+                                            <div class="col-xs-12">
+                                                <div id="frontCalendar_2"
+                                                     data-bookings="[{&quot;id&quot;:62,&quot;created_at&quot;:&quot;2018-05-08 16:54:13&quot;,&quot;updated_at&quot;:&quot;2018-05-11 19:00:20&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-05-24 19:00:20&quot;,&quot;amount&quot;:&quot;50000.00&quot;,&quot;discount&quot;:&quot;5000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;25000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:&quot;Description 1&quot;,&quot;cf2&quot;:&quot;Description 2&quot;,&quot;cf3&quot;:&quot;Description 3&quot;,&quot;cf4&quot;:&quot;Description 4&quot;,&quot;is_active&quot;:null},{&quot;id&quot;:77,&quot;created_at&quot;:&quot;2018-07-02 18:16:39&quot;,&quot;updated_at&quot;:&quot;2018-07-07 12:15:56&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 12:15:56&quot;,&quot;amount&quot;:&quot;100000.00&quot;,&quot;discount&quot;:&quot;10000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;50000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:null,&quot;cf2&quot;:null,&quot;cf3&quot;:null,&quot;cf4&quot;:null,&quot;is_active&quot;:null},{&quot;id&quot;:97,&quot;created_at&quot;:&quot;2018-07-07 12:22:21&quot;,&quot;updated_at&quot;:&quot;2018-07-07 12:24:12&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 12:24:12&quot;,&quot;amount&quot;:&quot;125000.00&quot;,&quot;discount&quot;:&quot;0.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;100000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:null,&quot;cf2&quot;:null,&quot;cf3&quot;:null,&quot;cf4&quot;:null,&quot;is_active&quot;:null},{&quot;id&quot;:98,&quot;created_at&quot;:&quot;2018-07-07 12:27:40&quot;,&quot;updated_at&quot;:&quot;2018-07-07 12:30:30&quot;,&quot;user_id&quot;:&quot;203&quot;,&quot;booking_date&quot;:&quot;2018-07-11 12:30:30&quot;,&quot;amount&quot;:&quot;125000.00&quot;,&quot;discount&quot;:&quot;5000.00&quot;,&quot;paid&quot;:&quot;1&quot;,&quot;amount_paid&quot;:&quot;75000.00&quot;,&quot;package_id&quot;:&quot;2&quot;,&quot;cf1&quot;:&quot;this is a new booking&quot;,&quot;cf2&quot;:&quot;testing this booking against&quot;,&quot;cf3&quot;:&quot;3rd booking&quot;,&quot;cf4&quot;:&quot;hope it turns red in front end&quot;,&quot;is_active&quot;:null}]"
+                                                     class="input-group date" data-provide="datepicker" style="width: 100%;">
+                                                    <input type="hidden" class="form-control"
+                                                           style="border-bottom-right-radius: 0 !important; border-top-right-radius: 0 !important;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 p0">
+                        <div class="box-two proerty-item2">
+                            <div class="item-thumb">
+                                <a href=@Url.Action("Login","Home")><img src=@Url.Content("/Content/uploads/packages/image_14.jpg")></a>
+                                <h4 class="proerty-price">
+                                    50000 <br>
+                                    <span>per </span>
+                                </h4>
+                            </div>
+                            <div class="item-entry overflow">
+                                <h5><a href=@Url.Action("Login","Home")> testing package </a></h5>
+                                <p><p>WE are please to offer you a package that suits all occasions.</p></p>
+                                <div class="calender">
+                                    <fieldset class="padding-5" style="border: 2px solid #f3f3f5;">
+                                        <div class="row price-range-section">
+                                            <div class="col-xs-12">
+                                                <div id="frontCalendar_14"
+                                                     data-bookings="[]"
+                                                     class="input-group date" data-provide="datepicker" style="width: 100%;">
+                                                    <input type="hidden" class="form-control"
+                                                           style="border-bottom-right-radius: 0 !important; border-top-right-radius: 0 !important;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="mybtn btn-Request-Quote" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

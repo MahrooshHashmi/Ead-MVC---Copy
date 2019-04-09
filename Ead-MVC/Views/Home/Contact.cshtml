@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="title">
+    <div class="contact-head">
+        <div class="container">
+            <div class="row">
+                <div class="listing-head">
+                    <h1 class="page-title">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-form">
+    <div class="container">
+        <div class="row form-title">
+            <h2><span>Contact Us</span></h2>
+        </div>
+        <form method="POST" action="https://www.wingding.pk/contact/submit">
+
+            <input type="hidden" name="_token" value="JCRDJgZXhgjwgEJSwDORI11TkOzaApRIQcHRFoh3">
+
+            <!--  yeh field har form main lagani ha -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" required class="form-control" id="name" name="name" placeholder="Your Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="email" required class="form-control" id="email" name="email" placeholder="Your Email ID">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <input type="text" required class="form-control" id="subject" name="subject" placeholder="Your Subject">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <textarea id="message" required class="form-control" name="message" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <button type="submit" class="btn btn-primary">Submit Message</button>
+                </div>
+            </div>
+            <!-- /.row -->
+        </form>
+    </div>
+</section>
+<section class="contact-div">
+    <div class="container">
+        <div class="row contact-info">
+            
+            <div class="col-md-4  col-sm-4 contact-icon" style="border-right: 1px solid #dcd5cd;">
+                <div class="col-md-4">
+                    <img alt="Call" src="~/Content/frontend/assets/img/phone-icon.png">
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li>Contact No</li>
+                        <li>0320-4174373</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4  col-sm-4 contact-icon">
+                <div class="col-md-4">
+                    <img alt="Email" src="~/Content/frontend/assets/img/email-icon.png">
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li>Email Address</li>
+                        <li>mochinanees@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
